@@ -1,0 +1,7 @@
+FROM python:3.11-slim
+RUN useradd -m runner
+WORKDIR /home/runner
+COPY grader_harness.py /home/runner/grader_harness.py
+RUN chmod +x /home/runner/grader_harness.py
+USER runner
+ENTRYPOINT ["python", "grader_harness.py"]
