@@ -1,0 +1,4 @@
+[
+  {"input": "3\n", "expected": "6\n", "timeout_s": 1},
+  {"input": "5\n", "expected": "10\n", "timeout_s": 1}
+]
