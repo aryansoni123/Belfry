@@ -1,7 +1,7 @@
 ## to build the grader docker image
 
 ```bash
-cd belfry-proto/grader
+cd grader
 docker build -t belfry-grader:1.0 .
 ```
 
