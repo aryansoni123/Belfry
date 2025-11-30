@@ -2,22 +2,15 @@
 
 ```bash
 cd belfry-proto/grader
-docker build -t belfry-grader:proto .
+docker build -t belfry-grader:1.0 .
 ```
 
 
-## for local testing of the grader
-```bash
-docker run --rm -v "$(pwd)/workspace:/workspace" belfry-grader:proto
-cat workspace/result.json 
-```
-
-
-## to run the backend server locally
+## to create a virtual env
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install fastapi uvicorn python-multipart aiofiles 
+pip install -r req.txt
 ```
 
 ## to start the backend server
@@ -28,5 +21,16 @@ uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 
 ## to run the frontend locally
 ```bash
-pip install streamlit httpx 
+cd ui
+streamlit run app.py
 ```
+
+# Optional
+
+## for local testing of the grader
+```bash
+docker run --rm -v "$(pwd)/workspace:/workspace" belfry-grader:proto
+cat workspace/result.json 
+```
+
+
