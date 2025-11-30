@@ -4,7 +4,7 @@ API = "http://localhost:8000"
 
 st.title("Belfry Prototype — Student")
 
-assignment = st.selectbox("Assignment", ["default"])
+assignment = st.selectbox("Assignment", ["WAP a function to get twice of a number"])
 uploaded = st.file_uploader("Upload solution.py", type=["py"])
 if st.button("Submit") and uploaded:
     files = {"code_file": (uploaded.name, uploaded.getvalue())}

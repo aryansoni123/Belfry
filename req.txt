@@ -1,2 +1,6 @@
-pip install fastapi uvicorn python-multipart aiofiles
-pip install streamlit httpx
+fastapi 
+uvicorn 
+python-multipart 
+aiofiles
+streamlit 
+httpx

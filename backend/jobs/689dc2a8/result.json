@@ -1,0 +1,1 @@
+{"results": [{"input": "3\n", "expected": "6\n", "stdout": "6\n", "stderr": "", "exit": 0, "runtime_ms": 42, "passed": true}, {"input": "5\n", "expected": "10\n", "stdout": "10\n", "stderr": "", "exit": 0, "runtime_ms": 52, "passed": true}], "passed_count": 2, "total_cases": 2}

@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 ROOT = os.path.abspath(os.path.dirname(__file__))
 JOBS_DIR = os.path.join(ROOT, "jobs")
-GRADER_IMAGE = "belfry-grader:proto"
+GRADER_IMAGE = "belfry-grader:1.0"
 
 os.makedirs(JOBS_DIR, exist_ok=True)
 
